@@ -3,6 +3,7 @@
   "routes": [
     { "src": "/login", "dest": "server.js" },
     { "src": "/logo.png", "dest": "logo.png" },
+    { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "index.html" }
   ]
 }
