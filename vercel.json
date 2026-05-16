@@ -1,9 +1,13 @@
 {
   "version": 2,
+  "builds": [
+    { "src": "server.js", "use": "@vercel/node" },
+    { "src": "logo.png", "use": "@vercel/static" },
+    { "src": "index.html", "use": "@vercel/static" }
+  ],
   "routes": [
     { "src": "/login", "dest": "server.js" },
     { "src": "/logo.png", "dest": "logo.png" },
-    { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "index.html" }
   ]
 }
